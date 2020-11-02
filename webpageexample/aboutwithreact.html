@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jack Higgins</title>
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src='https://unpkg.com/babel-standalone@6/babel.min.js'></script>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="Name"><h1>Jack Higgins</h1></div>
+    <div id="image">
+        <img src="images/profile.jpg" alt="profile_pic" width="250" height="250" class="center">
+    </div>
+    <div class="Tweets"><a class="twitter-timeline" href="https://twitter.com/jackhiggis?ref_src=twsrc%5Etfw">Tweets by jackhiggis</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+    <div class="main">
+    <div id="app"></div>
+    </div>
+    <div id="BottomMenu">
+        <p><a href="https://twitter.com/jackhiggis">Twitter</p>
+        <p><a href="https://www.linkedin.com/in/jack-higgins-606270138/">LinkedIn</p>
+        <p><a href="https://github.com/jhiggins10">GitHub</p>
+        <p><a href="https://www.instagram.com/thatkidcalledjack/">Instagram</p>
+    </div>
+<script type='text/babel'>
+const Hello = "Hi my name is Jack Higgins and welcome to my website";
+const ProgLag = "I have skills in HTML, CSS and JavaScript with knowledge of multiple Javascript Libraries";
+const ContactInfo = "You can contact me with the info below:";
+const TwitterUser = 'Twitter: @jackhiggis (or look to you left)';
+const Phonenumber = 'Phone number: 0791021371'
+const email = 'Email: higginsjack07@gmail.com';
+
+function HelloComponent(props){
+    return React.createElement(
+    'p',
+    null,
+    props.Hello
+)
+}
+
+function ProgComponent(props){
+    return React.createElement(
+        'p',
+        null,
+        props.ProgLag
+    )
+}
+
+function ContactInfoComponent(props){
+    return<p>{props.ContactInfo}</p>
+}
+
+function HandleComponent(props){
+    return<p>{props.TwitterUser}</p>
+}
+
+function PhoneComponent(props){
+    return React.createElement(
+    'p',
+    null,
+    props.Phonenumber
+)
+}
+
+function EmailComponent(props){
+    return React.createElement(
+    'p',
+    null,
+    props.email
+)
+}
+
+
+function App(){
+    return(
+        <div id ='container'>
+        <HelloComponent Hello={Hello}/>
+        <ProgComponent ProgLag={ProgLag}/>
+        <ContactInfoComponent ContactInfo={ContactInfo}/>
+        <HandleComponent TwitterUser={TwitterUser}/>
+        <PhoneComponent Phonenumber={Phonenumber}/>
+        <EmailComponent email={email}/>
+        </div>
+    )
+}
+
+
+
+
+ReactDOM.render(
+    <App/>, 
+    document.getElementById('app') 
+)
+
+
+</script>
+
+</body>
+</html>
