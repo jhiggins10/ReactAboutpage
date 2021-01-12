@@ -1,0 +1,20 @@
+Since starting my job hunt I have seen a number of companies have moved to ReactJS for there front end develiopment work.
+Because of this I decided to learn how to use it.
+
+The first project I created was a simple about me page that used ReactJS to display information about myself. 
+For this page I used babel to help me program with ease.
+
+At the start of the project I created a number of variables which contain numerous pieces of information. 
+This allowed me to change any piece of information in a quick and easy way.
+
+After that I created numerous functions which would get and show the components on the page as well as set up HTML tags if I wish for the information
+to be set up in a specific way.
+
+An example of this is the components which contain my phone number as well as the programing languages I worked with. 
+For these in the functions that display them I set up the HTML <p> tag to diaplay them as a paragraph.
+
+After The Information functions were created and set-up. I had one final function that would show and display my information, and used ReactDom.render to
+control how the contents of the node is shown.
+
+Alongside using ReactJS I also used Twitter's API to display the recent Tweets that I have shared on my profile as well as create a menu at the 
+bottom of the page that links to other websites.
